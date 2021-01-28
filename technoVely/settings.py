@@ -67,6 +67,17 @@ TEMPLATES = [
     },
 ]
 
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            # ... some options here ...
+        },
+    },
+]
+
 WSGI_APPLICATION = 'technoVely.wsgi.application'
 
 
