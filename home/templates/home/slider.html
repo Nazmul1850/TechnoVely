@@ -1,0 +1,39 @@
+{% load static %}
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        {% for s in sliderdata %}
+        <div class="carousel-item {% if forloop.counter0 == 0 %} active {% endif %}">
+            <div class="slider-captions">
+                <h1 class="animate__animated animate__backInLeft s-title segoeui-bold-congress-blue-37px">{{s.title}}</h5>
+                    <p class="animate__animated animate__backInLeft slider-d segoeui-bold-congress-blue-25px">{{s.description}}</p>
+                    <div class="animate__animated animate__backInLeft get-started">
+                        <button class="get-start segoeui-bold-congress-blue-23px">Get start
+                            <img class="right-arrow" src="https://anima-uploads.s3.amazonaws.com/projects/6032eb6600488f4e22258fa9/releases/6032eb9ec76a778507e9e8cc/img/right-arrow@1x.png" />
+                        </button>
+                    </div>
+            </div>
+            <div class="slider-image1 d-block"><img class="animate__animated animate__backInRight image" src="{{s.image1.url}}" alt="..." height="80%" width="100%"></div>
+            {% if s.image2 %}
+            <div class="slider-image2 d-block"><img class="animate__animated animate__backInLeft image" src="{{s.image2.url}}" alt="..." height="120%" width="100%"></div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+{% block homepagescript %}
+{% load static %}
+<script src="{% static 'home/js/home.js' %}"></script>
+{% endblock %}

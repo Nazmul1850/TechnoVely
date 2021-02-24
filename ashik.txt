@@ -1,1 +1,11 @@
-Ashimilafls
+<!-- <div id="slider" class="main-slider">
+	<button onclick="jsCheck()">Check js</button>
+	{% for s in sliderdata %}
+		<div class="slider-title">{{s.title}}</div>
+		<div class="slider-description">{{s.description}}</div>
+		<div class="slider-image1"><img src="{{s.image1.url}}" alt=""></div>
+		{% if s.image2.url %}
+		<div class="slider-image2"><img src="{{s.image2.url}}" alt=""></div>
+		{% endif %}
+	{% endfor %}
+</div> -->
