@@ -1,0 +1,152 @@
+body {
+    font-family: "SegoeUI-Regular", Helvetica, Arial, serif;
+    padding-top: 60px;
+}
+/*===================================Rectangle1=====================*/
+.rectangle-1 {
+  background-color: var(--zircon);
+  height: 4000px;
+  width: 100%;
+}
+:root {
+  --zircon: rgba(242, 250, 255, 1);
+}
+/*===================================Logo=====================*/
+.logo {
+  background-image: url("logo.png");
+  background-size: 100% 100%;
+  height: 57px;
+  width: 118px;
+  }
+
+.technovely-written-logo {
+  background-image: url("name.png");
+  background-size: 100% 100%;
+  height: 54px;
+  width: 239px;
+  margin-left: -40px;
+  margin-top: 15px;
+}
+
+
+/*===================================NAVLINKS=====================*/
+.navbar-nav li {
+	padding-left: 20px;
+	margin-top: 10px;
+}
+#topNav {
+	height: 60px;
+}
+.about {
+  letter-spacing: 0px;
+  line-height: 20px;
+  min-height: 29px;
+  min-width: 56px;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.about:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0px 12px 5px -8px rgba(0, 0, 0, 0.2);
+}
+.survices {
+  letter-spacing: 0px;
+  line-height: 20px;
+  min-height: 29px;
+  min-width: 74px;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.survices:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0px 12px 5px -8px rgba(0, 0, 0, 0.2);
+}
+.consultation {
+  letter-spacing: 0px;
+  line-height: 20px;
+  min-height: 29px;
+  min-width: 114px;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.consultation:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0px 12px 5px -8px rgba(0, 0, 0, 0.2);
+}
+.get-in-touch {
+  letter-spacing: 0px;
+  line-height: 20px;
+  min-height: 29px;
+  min-width: 114px;
+  pointer-events: auto;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  margin-left: 80px;
+}
+.get-in-touch:hover {
+  transform: translate(0, -5px);
+  box-shadow: 0px 12px 5px -8px rgba(0, 0, 0, 0.2);
+}
+
+.segoeui-regular-normal-congress-blue-20px {
+  color: var(--congress-blue);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+:root {
+  --congress-blue: rgba(17, 65, 136, 1);
+}
+
+
+/*===================================MAIN_SLIDER=====================*/
+.main-slider {
+  background: linear-gradient(
+    180deg,
+    rgba(173, 226, 253, 0.47) 0%,
+    rgba(243, 247, 248, 0.05) 34.4%,
+    rgba(248, 248, 248, 0.08) 62.32%,
+    #b9e2f6 100%
+  );
+  height: 15%;
+  width: 100%;
+}
+
+/*===================================About_Page=====================*/
+.filler {
+	width: 100%;
+	height: 60px;
+}
+.about-page-hover {
+  background-color: var(--zircon);
+ height: 15%;
+  width: 100%;
+}
+.services-page-hover2 {
+  background-color: var(--zircon);
+ height: 15%;
+  width: 100%;
+}
+:root {
+  --zircon: rgba(242, 250, 255, 1);
+}
+
+.services-page-hover {
+  background: linear-gradient(
+    180deg,
+    rgba(180, 228, 253, 0.5) 0%,
+    rgba(184, 231, 254, 0) 22.04%,
+    rgba(185, 232, 254, 0.14) 67.97%,
+    rgba(189, 234, 255, 0.45) 98.3%,
+    #bdeaff 100%
+  );
+  height: 15%;
+  width: 100%;
+}
+
+
+
+
