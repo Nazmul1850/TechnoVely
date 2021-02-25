@@ -1,11 +1,17 @@
 body {
     font-family: "SegoeUI-Regular", Helvetica, Arial, serif;
     padding-top: 60px;
+    margin: 0;
+    box-sizing:border-box; 
+}
+ html {
+    padding:0;
+    margin:0;
 }
 /*===================================Rectangle1=====================*/
 .rectangle-1 {
   background-color: var(--zircon);
-  height: 4000px;
+  height: 2300px;
   width: 100%;
 }
 :root {
@@ -36,6 +42,8 @@ body {
 }
 #topNav {
 	height: 60px;
+  background-color: var(--cornflower-blue);
+  z-index: 100;
 }
 .about {
   letter-spacing: 0px;
@@ -111,7 +119,7 @@ body {
     rgba(248, 248, 248, 0.08) 62.32%,
     #b9e2f6 100%
   );
-  height: 16.5%;
+  height: 25%;
   width: 100%;
 }
 .image {
@@ -221,7 +229,7 @@ button.get-start {
 .about-page-hover {
   background-color: var(--zircon);
   position: relative;
- height: 16.5%;
+ height: 25%;
   width: 100%;
 
 }
@@ -300,7 +308,7 @@ button.get-start {
   pointer-events: auto;
   transition: all 0.2s ease;
   white-space: nowrap;
-  margin-top:20%;
+  margin-top:10%;
 }
 .about-more:hover {
   transform: translate(0, -5px);

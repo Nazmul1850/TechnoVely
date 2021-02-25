@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'home/custom.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="{% static 'home/logo.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'home/logo.png' %}" >
     <link rel="stylesheet" href="{% static 'home/js/jquery-ui-1.12.1/jquery-ui.min.css' %}">
     <link rel="stylesheet" href="{% static 'home/js/jquery-ui-1.12.1/jquery-ui.structure.min.css' %}">
     <link rel="stylesheet" href="{% static 'home/js/jquery-ui-1.12.1/jquery-ui.theme.min.css' %}">
@@ -20,6 +20,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>TECHNOVELY</title>
 </head>
+
+
+<!-- 
+1. main-slider
+2. about-page-hover
+3. services-page-hover
+4. services-page-hover2
+5. consultation-page-hover 
+-->
 
 <body>
     <div class="rectangle-1">
@@ -30,12 +39,18 @@
         <div id="about" class="filler"></div>
         {% include 'home/about.html' %}
         <div id="services" class="filler"></div>
-        <div class="services-page-hover"></div>
+        {% include 'home/about.html' %}
         <div id="services2" class="filler"></div>
-        <div class="services-page-hover2"></div>
+        {% include 'home/about.html' %}
+<!--         <div class="services-page-hover"></div>
+ -->        
+<!--         <div id="services2" class="filler"></div>
+ --><!--         <div class="services-page-hover2"></div>
+ -->        
         <div id="consultation" class="filler"></div>
-        <div class="consultation-page-hover"></div>
-        <!--         <div id="get-in-touch" class="filler"></div>
+        {% include 'home/about.html' %}
+<!--         <div class="consultation-page-hover"></div>
+ -->        <!--         <div id="get-in-touch" class="filler"></div>
         <div class="get-in-touch-page-hover"></div>
  -->
     </div>
