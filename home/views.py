@@ -1,7 +1,8 @@
 from django.shortcuts import render
 
-from .models import Slider
+from .models import Slider , Services
 
 def home(request):
-	sliderdata = Slider.objects.all()
-	return render(request,'home/homebase.html',{'slider':sliderdata})
+	sliderData = Slider.objects.all()
+	serviceData = Services.objects.all()
+	return render(request,'home/homebase.html',{'slider':sliderData,'services':serviceData})

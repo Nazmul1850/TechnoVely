@@ -1,11 +1,30 @@
-<!-- <div id="slider" class="main-slider">
-	<button onclick="jsCheck()">Check js</button>
-	{% for s in sliderdata %}
-		<div class="slider-title">{{s.title}}</div>
-		<div class="slider-description">{{s.description}}</div>
-		<div class="slider-image1"><img src="{{s.image1.url}}" alt=""></div>
-		{% if s.image2.url %}
-		<div class="slider-image2"><img src="{{s.image2.url}}" alt=""></div>
-		{% endif %}
-	{% endfor %}
-</div> -->
+$(document).ready(function() { 
+	console.log("Reached");
+	$('#all-services').owlCarousel({
+    loop:true,
+    center:true,
+    items:3,
+    margin:10,
+    autoplay:true,
+    dots:true,
+    autoplayTimeout:8500,
+    smartSpeed:450,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        768:{
+            items:3,
+            nav:false
+        },
+        1170:{
+            items:5,
+            nav:true,
+            loop:false
+        }
+    }
+});
+
+});

@@ -1,0 +1,30 @@
+{% block homepagescript %}
+{% load static %}
+<script src="{% static 'home/js/home.js' %}"></script>
+{% endblock %}
+{% load static %}
+<div class="services-page-hover">
+    <div class="about-image">
+        <img class="logo-blar" src="{% static 'home/logo.png' %}" />
+    </div>
+    <div class="services-up">
+        <div class="services-title">
+            <h1 class="services-technovely segoeui-bold-blue-dianne-40px">Our Services</h1>
+        </div>
+        <div class="services-slider">
+            <div class="container">
+                <div class="row">
+                    <div id="all-services" class="owl-carousel">
+                        {% for s in serviceData %}
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img src="{{s.image.url}}" alt="">
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

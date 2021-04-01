@@ -1,0 +1,14 @@
+body {
+    font-family: "SegoeUI-Regular", Helvetica, Arial, serif;
+    height: 100%;
+    padding:0px;
+    margin: 0px;
+    box-sizing:border-box; 
+}
+ html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  padding:0px;
+  margin:0px;
+}

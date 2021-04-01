@@ -1,12 +1,16 @@
 body {
     font-family: "SegoeUI-Regular", Helvetica, Arial, serif;
-    padding-top: 60px;
-    margin: 0;
+    height: 100%;
+    padding:0px;
+    margin: 0px;
     box-sizing:border-box; 
 }
  html {
-    padding:0;
-    margin:0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  padding:0px;
+  margin:0px;
 }
 /*===================================Rectangle1=====================*/
 .rectangle-1 {
@@ -119,7 +123,8 @@ body {
     rgba(248, 248, 248, 0.08) 62.32%,
     #b9e2f6 100%
   );
-  height: 25%;
+  margin-top: 60px;
+  height: 26%;
   width: 100%;
 }
 .image {
@@ -157,6 +162,9 @@ body {
   min-height: 100px;
   min-width: 344px;
   white-space: nowrap;
+}
+#carouselExampleIndicators {
+  height: 100%;
 }
 .carousel-item {
 	position: relative;
@@ -268,7 +276,8 @@ button.get-start {
 .about-up {
 	position: absolute;
 	top: 0;
-	margin-left: 20%;
+	margin: 0;
+  width: 100%;
 }
 
 .logo-blar {
@@ -294,9 +303,10 @@ button.get-start {
 }
 .about-title {
 	margin-top:5%;
+  text-align: center;
 }
 .about-description {
-	margin-top:10%;
+	margin-top:5%;
 }
 .about-more {
   margin: auto;
@@ -347,8 +357,85 @@ button.get-start {
     rgba(189, 234, 255, 0.45) 98.3%,
     #bdeaff 100%
   );
+  position: relative;
   height: 16.5%;
   width: 100%;
+}
+.services-up {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.services-title {
+  margin-top: 5%;
+}
+.services-technovely {
+  text-align: center;
+}
+.container {
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+#all-services .item {
+  padding:50px;
+  margin-bottom:20px;
+  opacity: 0.2;
+  min-width: 80%;
+  min-height: 80%;
+  -webkit-transform: scale3d(0.8,0.8,1);
+  transform: scale3d(0.8,0.8,1);
+  -webkit-transition:all 0.3s ease-in-out;
+  -moz-transition:all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#all-services .owl-item.active.center .item {
+  opacity: 1;
+  -webkit-transform: scale3d(1,1,1);
+  transform: scale3d(1,1,1);
+}
+
+#all-services .owl-item img {
+  min-height: 300px;
+  min-width:400px;
+  margin:0 auto 17px;
+  border-radius: 6px;
+}
+
+
+#all-services.owl-carousel .owl-dots .owl-dot.active span,
+#all-services.owl-carousel .owl-dots .owl-dot:hover span {
+  background-color: red;
+  transform: translate3d(0px,-50%,0px) scale(0.7);
+}
+
+#all-services.owl-carousel .owl-dots {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+#all-services.owl-carousel .owl-dots .owl-dot {
+  display: inline-block;
+}
+#all-services.owl-carousel .owl-dots .owl-dot span {
+  background-color: green;
+  display: inline-block;
+  height: 20px;
+  margin: 0 2px 5px;
+  transform: translate3d(0px,-50%,0px) scale(0.3);
+  transform-origin: 50% 50% 0;
+  transition: all 250ms ease-out 0s;
+  width: 20px; 
+}
+#all-services.owl-carousel .owl-nav {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
 }
 
 
